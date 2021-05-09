@@ -96,7 +96,7 @@ install_soga() {
         echo -e "检测到 soga 最新版本：2.06，开始安装"
         echo '127.0.0.1  soga.sprov.xyz' | tee -a /etc/hosts
         echo '127.0.0.1  doc.sprov.xyz' | tee -a /etc/hosts
-        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://ora1.us.gdivps.com/soga.tar.gz
+        wget -N --no-check-certificate -O /usr/local/soga.tar.gz https://soga/soga.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 soga 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
